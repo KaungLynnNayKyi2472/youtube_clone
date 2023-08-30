@@ -12,59 +12,219 @@
     <title>Youtube clone</title>
 </head>
 <body class="user-select-none">
-    <div class="container-fluid">
-        <div class="row my-1">
-            <div class="col-6 d-flex">
-                <span class="text-red fs-5 me-1"><ion-icon name="logo-youtube"></ion-icon></span>
-                <h5 class="fw-bolder">YouTube</h5>
+    <header class="container-fluid py-1">
+        <div class="row d-flex justify-content-lg-between align-items-center">
+            <div class="col col-lg-3 d-flex">
+                <button class="d-none d-lg-block btn btn-light border border-0 rounded-circle fs-5 me-3">
+                    <ion-icon name="menu"></ion-icon>
+                </button>
+                <span class="text-red fs-5 me-1 mt-lg-2"><ion-icon name="logo-youtube"></ion-icon></span>
+                <h5 class="fw-bolder mt-lg-2">YouTube</h5>
             </div>
-            <div class="col">
-                <span class="fs-5 me-3"><ion-icon name="notifications-outline"></ion-icon></span>
-                <span class="fs-5"><ion-icon name="search-outline"></ion-icon></span>
+            <div class="col-5 d-none d-lg-flex">
+                <form class="input-group me-2">
+                    <input type="search" class="form-control">
+                    <span class="input-group-text"><ion-icon name="search-outline"></ion-icon></span>
+                </form>
+                <button class="btn btn-light border border-0 rounded-circle fs-5 me-2">
+                    <ion-icon name="mic"></ion-icon>
+                </button>
             </div>
-            <div class="col">
-                <button class="border border-black rounded-pill">Sign in</button>
+            <div class="col col-sm-5 col-md-4 col-lg-2 d-flex">
+                <button class="day btn btn-light border border-0 rounded-circle fs-5 me-1 me-sm-2">
+                    <ion-icon name="sunny"></ion-icon>
+                </button>
+                <button class="night btn btn-light border border-0 rounded-circle fs-5 me-1 me-sm-2">
+                    <ion-icon name="moon"></ion-icon>
+                </button>
+                <button class="btn btn-light border border-0 rounded-circle fs-5 me-1 me-sm-2">
+                    <ion-icon name="notifications-outline"></ion-icon>
+                </button>
+                <button class="d-lg-none btn btn-light border border-0 rounded-circle fs-5 me-1 me-sm-2">
+                    <ion-icon name="search-outline"></ion-icon>
+                </button>
+                <button class="btn btn-secondary rounded-circle fs-5">K</button>
             </div>
         </div>
-        <div class="d-flex overflow-y-hidden overflow-x-auto text-nowrap mb-1">
-            <span class="bg-light-subtle fs-5 p-1 me-3"><ion-icon name="compass-outline"></ion-icon></span>
-            <span class="border border-0 bg-secondary rounded py-1 px-2 me-2">All</span>
-            <span class="border border-0 bg-secondary-subtle py-1 px-2 me-2">HTML</span>
-            <span class="border border-0 bg-secondary-subtle py-1 px-2 me-2">CSS</span>
-            <span class="border border-0 bg-secondary-subtle py-1 px-2 me-2">Bootstrap</span>
-            <span class="border border-0 bg-secondary-subtle py-1 px-2 me-2">JavaScript</span>
-            <span class="border border-0 bg-secondary-subtle py-1 px-2 me-2">Jquery</span>
-            <span class="border border-0 bg-secondary-subtle py-1 px-2 me-2">ReactJS</span>
-            <span class="border border-0 bg-secondary-subtle py-1 px-2 me-2">NodeJS</span>
-            <span class="border border-0 bg-secondary-subtle py-1 px-2 me-2">PHP</span>
-            <span class="border border-0 bg-secondary-subtle py-1 px-2 me-2">Laravel</span>
-            <span class="border border-0 bg-secondary-subtle py-1 px-2 me-2">MySQL</span>
-            <span class="border border-0 bg-secondary-subtle py-1 px-2 me-2">Recently uploaded</span>
-            <span class="border border-0 bg-secondary-subtle py-1 px-2 me-2">New to you</span>
-            <span class="send text-blue py-1 px-2">Send feedback</span>
-        </div>
-        <div class="row position-fixed bottom-0 mt-1">
-            <di class="col d-flex flex-column align-self-center">
-                <span class="text-center fs-5"><ion-icon name="home-sharp"></ion-icon></span>
-                <small>Home</small>
-            </di>
-            <di class="col d-flex flex-column align-self-center">
-                <span class="text-center fs-5"><ion-icon name="play-circle-outline"></ion-icon></span>
-                <small>Shorts</small>
-            </di>
-            <di class="col d-flex flex-column align-self-center">
-                <span class="text-center fs-1"><ion-icon name="add-circle-outline"></ion-icon></span>
-            </di>
-            <di class="col d-flex flex-column align-self-center">
-                <span class="text-center fs-5"><ion-icon name="albums-outline"></ion-icon></span>
-                <small>Subscriptions</small>
-            </di>
-            <di class="col d-flex flex-column align-self-center">
-                <span class="text-center fs-5"><ion-icon name="library-outline"></ion-icon></span>
-                <small>Library</small>
-            </di>
+    </header>
+    <nav class="container-fluid navbar navbar-expand overflow-y-hidden overflow-x-auto text-nowrap py-1 ps-2">
+        <ul class="navbar-nav">
+            <li class="nav-item bg-secondary-subtle fs-5 py-1 px-2 me-3">
+                <ion-icon name="compass-outline"></ion-icon>
+            </li>
+            <li class="all nav-item rounded text-light py-1 px-2 me-2">All</li>
+            <li class="nav-item bg-secondary-subtle py-1 px-2 me-2">HTML</li>
+            <li class="nav-item bg-secondary-subtle py-1 px-2 me-2">CSS</li>
+            <li class="nav-item bg-secondary-subtle py-1 px-2 me-2">Bootstrap</li>
+            <li class="nav-item bg-secondary-subtle py-1 px-2 me-2">Tailwind CSS</li>
+            <li class="nav-item bg-secondary-subtle py-1 px-2 me-2">JavaScript</li>
+            <li class="nav-item bg-secondary-subtle py-1 px-2 me-2">Jquery</li>
+            <li class="nav-item bg-secondary-subtle py-1 px-2 me-2">ReactJS</li>
+            <li class="nav-item bg-secondary-subtle py-1 px-2 me-2">NodeJS</li>
+            <li class="nav-item bg-secondary-subtle py-1 px-2 me-2">Express</li>
+            <li class="nav-item bg-secondary-subtle py-1 px-2 me-2">PHP</li>
+            <li class="nav-item bg-secondary-subtle py-1 px-2 me-2">Laravel</li>
+            <li class="nav-item bg-secondary-subtle py-1 px-2 me-2">MySQL</li>
+            <li class="nav-item bg-secondary-subtle py-1 px-2 me-2">Oracle</li>
+            <li class="nav-item bg-secondary-subtle py-1 px-2 me-2">Python</li>
+            <li class="nav-item bg-secondary-subtle py-1 px-2 me-2">Django</li>
+            <li class="nav-item bg-secondary-subtle py-1 px-2 me-2">Java</li>
+            <li class="nav-item bg-secondary-subtle py-1 px-2 me-2">Spring</li>
+            <li class="nav-item bg-secondary-subtle py-1 px-2 me-2">C#</li>
+            <li class="nav-item bg-secondary-subtle py-1 px-2 me-2">.NET</li>
+            <li class="nav-item bg-secondary-subtle py-1 px-2 me-2">Dart</li>
+            <li class="nav-item bg-secondary-subtle py-1 px-2 me-2">Flutter</li>
+            <li class="nav-item bg-secondary-subtle py-1 px-2 me-2">Swift</li>
+            <li class="nav-item text-blue py-1 px-2">Send feedback</li>
+        </ul>
+    </nav>
+    <div class="container-fluid py-1">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-lg-4 mb-3">
+                <img src="img/video1.jpg" height="150" class="w-100">
+                <div class="row mt-2">
+                    <div class="col-1 me-3">
+                        <img src="img/logo.jpg" width="30" height="30" class="rounded-circle">
+                    </div>
+                    <div class="col d-flex flex-column">
+                        <span class="cap">Scrollspy | Active Icon Navigation Menu on Page Scroll using CSS &...</span>
+                        <small class="vd">5.8K views . 1 day ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-3">
+                <img src="img/video2.jpg" height="150" class="w-100">
+                <div class="row mt-2">
+                    <div class="col-1 me-3">
+                        <img src="img/logo.jpg" width="30" height="30" class="rounded-circle">
+                    </div>
+                    <div class="col d-flex flex-column">
+                        <span class="cap">Magnetic Parallax Image Hover Effects using Vanilla Javascript</span>
+                        <small class="vd">6.4K views . 3 days ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-3">
+                <img src="img/video3.jpg" height="150" class="w-100">
+                <div class="row mt-2">
+                    <div class="col-1 me-3">
+                        <img src="img/logo.jpg" width="30" height="30" class="rounded-circle">
+                    </div>
+                    <div class="col d-flex flex-column">
+                        <span class="cap">Top CSS & JS Effects | June 2023 @OnlineTutorialsYT</span>
+                        <small class="vd">4.3K views . 5 days ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-3">
+                <img src="img/video4.jpg" height="150" class="w-100">
+                <div class="row mt-2">
+                    <div class="col-1 me-3">
+                        <img src="img/logo.jpg" width="30" height="30" class="rounded-circle">
+                    </div>
+                    <div class="col d-flex flex-column">
+                        <span class="cap">Glowing Letter Effects on Cursor Movement using CSS & Javascript</span>
+                        <small class="vd">7K views . 7 days ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-3">
+                <img src="img/video5.jpg" height="150" class="w-100">
+                <div class="row mt-2">
+                    <div class="col-1 me-3">
+                        <img src="img/logo.jpg" width="30" height="30" class="rounded-circle">
+                    </div>
+                    <div class="col d-flex flex-column">
+                        <span class="cap">Magnetic & Direction-Aware Button Effects | CSS & Javascript</span>
+                        <small class="vd">8.9K views . 9 days ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-3">
+                <img src="img/video6.jpg" height="150" class="w-100">
+                <div class="row mt-2">
+                    <div class="col-1 me-3">
+                        <img src="img/logo.jpg" width="30" height="30" class="rounded-circle">
+                    </div>
+                    <div class="col d-flex flex-column">
+                        <span class="cap">Menu Hover Effects | CSS & Javascript</span>
+                        <small class="vd">7.9K views . 11 days ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-3">
+                <img src="img/video7.jpg" height="150" class="w-100">
+                <div class="row mt-2">
+                    <div class="col-1 me-3">
+                        <img src="img/logo.jpg" width="30" height="30" class="rounded-circle">
+                    </div>
+                    <div class="col d-flex flex-column">
+                        <span class="cap">Text Rain Animation using CSS & Javascript</span>
+                        <small class="vd">17K views . 13 days ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-3">
+                <img src="img/video8.jpg" height="150" class="w-100">
+                <div class="row mt-2">
+                    <div class="col-1 me-3">
+                        <img src="img/logo.jpg" width="30" height="30" class="rounded-circle">
+                    </div>
+                    <div class="col d-flex flex-column">
+                        <span class="cap">How to Make Custom Glowing Mouse Cursor with CSS &...</span>
+                        <small class="vd">8.4K views . 2 weeks ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-3">
+                <img src="img/video9.jpg" height="150" class="w-100">
+                <div class="row mt-2">
+                    <div class="col-1 me-3">
+                        <img src="img/logo.jpg" width="30" height="30" class="rounded-circle">
+                    </div>
+                    <div class="col d-flex flex-column">
+                        <span class="cap">Input Text Wave Animation On Click using CSS & Javascript</span>
+                        <small class="vd">8.6K views . 2 weeks ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-3">
+                <img src="img/video10.jpg" height="150" class="w-100">
+                <div class="row mt-2">
+                    <div class="col-1 me-3">
+                        <img src="img/logo.jpg" width="30" height="30" class="rounded-circle">
+                    </div>
+                    <div class="col d-flex flex-column">
+                        <span class="cap">Javascript Pixel Image Animation Effects | Html CSS</span>
+                        <small class="vd">9.6K views . 2 weeks ago</small>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <footer class="container-fluid border-top position-sticky bottom-0 py-1">
+        <div class="row d-flex justify-content-evenly">
+            <div class="col d-flex flex-column">
+                <span class="text-center fs-5"><ion-icon name="home-sharp"></ion-icon></span>
+                <small class="text-center">Home</small>
+            </div>
+            <div class="col d-flex flex-column">
+                <span class="text-center fs-5"><ion-icon name="play-circle-outline"></ion-icon></span>
+                <small class="text-center">Shorts</small>
+            </div>
+            <div class="col d-flex flex-column">
+                <span class="text-center fs-1"><ion-icon name="add-circle-outline"></ion-icon></span>
+            </div>
+            <div class="col-3 d-flex flex-column">
+                <span class="text-center fs-5"><ion-icon name="albums-outline"></ion-icon></span>
+                <small class="text-center">Subscriptions</small>
+            </div>
+            <di class="col d-flex flex-column">
+                <span class="text-center fs-5"><ion-icon name="copy-outline"></ion-icon></span>
+                <small class="text-center">Library</small>
+            </di>
+        </div>
+    </footer>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
